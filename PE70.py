@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=70
+
 def soe(n):
     arr = []
     prime = [True for i in range(n+1)]

@@ -3,6 +3,9 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 import csv
+
+### Problem statement at this link: https://projecteuler.net/problem=54
+
 results = []
 with open("PE54_poker.txt") as csvfile:
     reader = csv.reader(csvfile, delimiter=' ') # change contents to floats

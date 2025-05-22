@@ -4,10 +4,10 @@ from matplotlib import pyplot as plt
 import math
 
 
-### This is a disgusting piece of shit
+### Problem statement at this link: https://projecteuler.net/problem=61
 
 
-def what_the_hell_is_this(arr, bigarr):
+def what_is_this(arr, bigarr):
     why = [0,0,0,0,0,0]
     for item in arr[1:]:
         for l in range(1,6):
@@ -37,7 +37,7 @@ def cyclical_figurate_numbers():
         idk = temp
         for item in idk:
             if len(item)!=i+1: idk.remove(item)
-    return [sum(item[:]) for item in idk if item[-1]%100==item[0]//100 and what_the_hell_is_this(item, lists)]
+    return [sum(item[:]) for item in idk if item[-1]%100==item[0]//100 and what_is_this(item, lists)]
 
 
 print(cyclical_figurate_numbers())

@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=86
+
 ### I think there are a couple more tricks to speed this up, but this works pretty quickly. With each primitive the number of
 ### cuboids increases regularly as you change the factor of k. For example for 3,4,5 the number of cuboids is 3, and this
 ### increases linearly for 6,8,10 and 9,12,15 etc. If we were trying to do this for arbitrarily large cubes this would be

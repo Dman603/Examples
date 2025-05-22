@@ -2,6 +2,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=87
+
 ### Could make this faster with numpy arrays or the set object I think. Its still quick enough though.
 
 def soe(n):

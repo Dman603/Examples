@@ -3,6 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=77
 
 def soe(n):
     arr = []

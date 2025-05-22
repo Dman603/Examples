@@ -4,8 +4,7 @@ from matplotlib import pyplot as plt
 import math
 import itertools
 
-### This code feels cheap as this problem would have been much more difficult had I had to change my "inners" and "outers" arrays
-### having only had to check 5!^2 permutations, 
+### Problem statement at this link: https://projecteuler.net/problem=68
 
 
 def perfect_5gon():

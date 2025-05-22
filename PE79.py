@@ -4,11 +4,7 @@ from matplotlib import pyplot as plt
 import math
 import csv
 
-### I have no idea what this problem even is, I just kinda guessed until
-### I got it right, but I did use a certain approach to get a good starting
-### value, then tweaked the answer until it worked in my test. I guess I could
-### have eventually automated the adding of numbers into the answer, but
-### it ended up being simple without it.
+### Problem statement at this link: https://projecteuler.net/problem=79
 
 results = []
 

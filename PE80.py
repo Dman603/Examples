@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=80
+
 def func(x):
     if x<50: return 0
     else: return x-50

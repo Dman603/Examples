@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
-### I lost the code to this??? I have to do it again? lmfao
+### Problem statement at this link: https://projecteuler.net/problem=85
 
 def CountingRect():
     minrect = 10000

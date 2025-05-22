@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=74
+
 factorials = [1,1,2,6,24,120,720,5040,40320,362880]
 def digit_factorial_sums():
     total = 0

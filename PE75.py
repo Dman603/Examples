@@ -3,17 +3,17 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
-### this took 3 months lmao
-### I had to basically teach myself how to boolean mask shit which is why it worked this time I guess and didnt take 3 actual years to compute
+### Problem statement at this link: https://projecteuler.net/problem=75
+
 ### I still want to see if there is a way to solve this with the other approach I was taking where you iterate through each length individually and use the 
 ### quadratic I found to compute a,b based on c,l
-### The strategy does work, after testing it against the one that actually works Ive gotten the same values. The issue is it takes about 10000x longer I think or something. However
+### The strategy does work, after testing it against the one that actually works Ive gotten the same values. The issue is it takes about 10000x longer. However
 ### I do think there is a way to iterate through it differently, as I believe you can specifically skip values based on how the quadratic is structured
 ### I believe for this there would be some sort of substitution into the radical, this would also remove a lot of the computation in each cycle as well, so I think there could be
 ### a decent factor of 1000 speed increase even.
 
-### However, the approach that actually functions now is similar to the initial approach I took after a while, which was to find every single triangle using something I found
-### online called Euclid's formula. All this does is give you a way to generate primitive right triangles by inputting certain integer values.
+### However, the approach that actually functions now is similar to the initial approach I took after a while, which was to find every single triangle using Euclid's formula. 
+### All this does is give you a way to generate primitive right triangles by inputting certain integer values.
 ### Euclids formula takes two positive integers as input, m and n, where m>n, and m and n are coprime. If these conditions are not met, nonprimitive integer right triangles will
 ### be generated. The formula states a = m^2 - n^2, b = 2mn, c = m^2 + n^2. To apply this to my problem, I can begin with the fact that l = a + b + c, and just substitute these
 ### m and n values in. This gives us l = 2m^2 + 2mn, as some of the terms cancel. With this we learn the first interesting fact about this problem that lets us shave down time
@@ -32,7 +32,7 @@ import math
 ### can be analyzed analitically by taking the first partial derivitive of the equation with respect to m, which is 2m + n. if both m and n are positive, this means that the
 ### partial derivitive can only equal zero when both m and n are 0. However, this technically isnt possible since 0 isnt in the domain, so we have to check endpoints as well
 ### the endpoints for n are 1 and m - 1, so substituting these in we find that 1 is clearly the maximizing value for m. Substituting 1 in for n gives the expression
-### 750000 >= m^2 + m. Now here we can either solve a quadratic, or say fuck it and just do sqrt(750000) which works b/c sqrt(750000 - m) would be lower, so its actually a 
+### 750000 >= m^2 + m. Now here we can either solve a quadratic, or just do sqrt(750000) which works because sqrt(750000 - m) would be lower, so its actually a 
 ### slight overestimate to do it this way. After this you can just iterate through all m based on these bounds, and generate a list of numbers coprime to m based on the bounds
 ### for n. Theres also something weird that needs to be done where both m and n cannot be odd, so for odd m you basically have to make sure to remove all odd numbers from the list
 ### of generated coprimes. Using all of this information can generate you a list of all primitive right triangles (and their lengths). Something interesting I found which was
@@ -44,7 +44,7 @@ import math
 ### which ones are multiples of only one other primitive triangle (or are primitive themselves, 12%12==0 is true). A binary mask would have been possible for this if it wanted you
 ### to find all integer right triangles, but the fact that it did not want ones which had the same length as another made it so that you have to keep track of the multiplicity of this
 ### its not hard initially when you are just dealing with primitives, but there are also many nonprimitives which are only composed of a single primitive, and not two.
-### this is the issue where you have to actually keep track of how many triangles an individual length is a multiple of. Ternary could work but idk why the fuck I would do that.
+### this is the issue where you have to actually keep track of how many triangles an individual length is a multiple of.
 
 def soe(n):
     arr = []

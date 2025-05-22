@@ -4,6 +4,8 @@ from matplotlib import pyplot as plt
 import math
 import csv
 
+### Problem statement at this link: https://projecteuler.net/problem=81
+
 results = []
 
 with open("PE81.txt") as csvfile:

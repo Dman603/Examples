@@ -3,11 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
-### This kinda takes a while to run (still under a minute but I feel like it should be able to take a lot less) but I cant really think of a way to speed it up.
-### Maybe the structure of the main array that I am using is a drag on the program? I am not sure how much processing it takes to index varaible length arrays
-### like that. It's a big unfortunate that this is the solution I came up with, as there is a way to limit the pool of numbers based on adding digits to check
-### for multiples of 3. However it would have been really awkward to implement that into this problem, as it basically would have operated in the same place as 
-### the if statement to actaully check the main condition of concatenation.
+### Problem statement at this link: https://projecteuler.net/problem=60
 
 def soe(n):
     arr = []

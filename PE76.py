@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
-
+### Problem statement at this link: https://projecteuler.net/problem=76
 
 def counting_summations():
     arr = np.zeros([100,100])

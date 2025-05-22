@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=57
+
 def square_root_convergents():
     cnt = 0
     n = 3

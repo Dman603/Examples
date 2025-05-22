@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=56
+
 ### Not really sure how good this approach is. I know that it would be a lot faster to just let python manage the large numbers
 ### but I feel like that would go against the point of the problem, as coming up with a novel approach to deal with numbers
 ### on the scale of 10^200 is part of the challenge that the problem would have presented when it was released in 2005 or so

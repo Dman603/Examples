@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=62
+
 def cubic_permutations():
     cubes = [sorted(str(k**3)) for k in range(10000)]
     for i in range(1,30000):

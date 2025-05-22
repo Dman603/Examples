@@ -4,9 +4,7 @@ from matplotlib import pyplot as plt
 import math
 import csv
 
-### I have no idea why certain words had repeated characters after deciphering them, I just put it into google docs and corrected
-### all of the mistakes manually at that point. To be honest I think its an issue with python or something, as some of the 
-### XOR calls were not giving the desired outcome, but it doesn't really matter at this point honestly.
+### Problem statement at this link: https://projecteuler.net/problem=59
 
 
 with open("PE59_cipher.txt") as csvfile:

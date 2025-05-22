@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=51
+
 ### Didn't try to find a good way to actually check which of the numbers the code spits out is the least. Really the question is kinda vague in not saying if a number like 
 ### 000109 would count as being lower, as it is technically part of the same family. Either way there were only 4 possible answers, and its pretty clear which one 
 ### is probably considered to be the least just by looking at it
@@ -41,8 +43,8 @@ def cycle_perm(p, max):
         if perm[len(perm)-pos] == max-pos+2:
             perm[len(perm)-pos-1] +=1
             perm[len(perm)-pos] = perm[len(perm)-pos-1]+1
-            for fuck in range(len(perm)-pos+1,len(perm)):
-                perm[fuck] = perm[len(perm)-pos]+fuck-len(perm)+pos
+            for f in range(len(perm)-pos+1,len(perm)):
+                perm[f] = perm[len(perm)-pos]+f-len(perm)+pos
     return perm
 
 

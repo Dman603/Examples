@@ -3,6 +3,8 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
+### Problem statement at this link: https://projecteuler.net/problem=73
+
 ### I think there is a much more elegant solution that has to do with just dividing the distance between the upper and lower bounds by each of the factors, however with multiple
 ### factors this leads to double counts, so you would have to do nCr(np,2) divisions where np is the number of prime factors. However, np is never more than 6, since 
 ### 2*3*5*7*9*11*13 > 12000

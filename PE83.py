@@ -4,21 +4,7 @@ from matplotlib import pyplot as plt
 import math
 import csv
 
-### I somehow got this, but I didnt really write something thorough.
-### the branching algorithm that I used would branch out until it 
-### reached a certain upper bound of a sum
-### I just guessed an upper bound and hoped that it would find the
-### correct solution without taking too long. For this set of numbers
-### this indeed did end up working. For a different set of numbers
-### this may not work. There is a way which you can dynamically find
-### what the upper bound should be, which has to do with each current
-### branch's sum being less than the some of the numbers found
-### in the previous iteration. This code was written over the
-### course of a couple years, and when I solved this I really
-### dont know what a significant amount of it does. The bizarre
-### indexing I got the hang of, but I really do not have a grasp
-### on how I had been assigning the upper bound throughout.
-
+### Problem statement at this link: https://projecteuler.net/problem=83
 
 size = 80
 results = []

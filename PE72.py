@@ -3,7 +3,7 @@ import numpy as np
 from matplotlib import pyplot as plt
 import math
 
-### This just feels really bad and is kinda slow but idk if thats cause im missing something of if my code is just shit.
+### Problem statement at this link: https://projecteuler.net/problem=72
 
 def soe(n):
     arr = []
